@@ -17,11 +17,11 @@ The main difference betweeh the f15se2-re project and this reconstruction is the
 The game executable is compressed using EXEPack. The sha256 signatures are:
 
 * `34f8a654a3c46095d48dcc76ecf088cb90655972794b8ecb4d87927f5a295b9b  game/SCOOP.EXE`
-* `343320c1a103729df3d69bebf887f1c5d3c9bf38890ff3ec6ec4d515c40d9b5b  game/SCOOP.EXE` (unpackad using [unEXEPack](https://github.com/w4kfu/unEXEPACK))
+* `343320c1a103729df3d69bebf887f1c5d3c9bf38890ff3ec6ec4d515c40d9b5b  game/SCOOP.EXE` (unpacked using [unEXEPack](https://github.com/w4kfu/unEXEPACK))
 
 # Status
 
-As of the time of writing this, the reconstruction has not started yet. We are just testing the technology to see if it works and setting up the initial scripts to automatically compile the complete binary and compare it with the original one. It is unclear if the technology is good enough, but some results are promising. Check the [src/recovered] folder to see examples of reconstructed functions.
+As of the time of writing this, the reconstruction has not started yet. We are just testing the technology to see if it works and setting up the initial scripts to automatically compile the complete binary and compare it with the original one. It is unclear if the technology is good enough, but some results are promising. Check the [src/recovered folder](https://github.com/neuromancer/the-scoop-re/tree/main/src/recovered) to see examples of reconstructed functions. All the reconstructored source code was producing using [Gemini 2.5](https://blog.google/technology/google-deepmind/gemini-model-thinking-updates-march-2025/).
 
 # Building
 
