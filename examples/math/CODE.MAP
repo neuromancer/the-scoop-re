@@ -1,0 +1,625 @@
+
+ Start  Stop   Length Name                   Class
+ 00000H 03325H 03326H _TEXT                  CODE
+ 03330H 0578FH 02460H EMULATOR_TEXT          CODE
+ 05790H 05790H 00000H C_ETEXT                ENDCODE
+ 05790H 058EFH 00160H EMULATOR_DATA          FAR_DATA
+ 058F0H 05931H 00042H NULL                   BEGDATA
+ 05932H 06247H 00916H _DATA                  DATA
+ 06248H 06255H 0000EH CDATA                  DATA
+ 06256H 06256H 00000H XIFB                   DATA
+ 06256H 06256H 00000H XIF                    DATA
+ 06256H 06256H 00000H XIFE                   DATA
+ 06256H 06256H 00000H XIB                    DATA
+ 06256H 06259H 00004H XI                     DATA
+ 0625AH 0625AH 00000H XIE                    DATA
+ 0625AH 0625AH 00000H XPB                    DATA
+ 0625AH 0625AH 00000H XP                     DATA
+ 0625AH 0625AH 00000H XPE                    DATA
+ 0625AH 0625AH 00000H XCB                    DATA
+ 0625AH 0625AH 00000H XC                     DATA
+ 0625AH 0625AH 00000H XCE                    DATA
+ 0625AH 0625AH 00000H XCFB                   DATA
+ 0625AH 0625AH 00000H XCF                    DATA
+ 0625AH 0625AH 00000H XCFE                   DATA
+ 0625AH 0634BH 000F2H CONST                  CONST
+ 0634CH 06353H 00008H HDR                    MSG
+ 06354H 06528H 001D5H MSG                    MSG
+ 06529H 0652AH 00002H PAD                    MSG
+ 0652BH 0652BH 00001H EPAD                   MSG
+ 0652CH 06535H 0000AH _BSS                   BSS
+ 06536H 06536H 00000H XOB                    BSS
+ 06536H 06536H 00000H XO                     BSS
+ 06536H 06536H 00000H XOE                    BSS
+ 06540H 06D3FH 00800H STACK                  STACK
+
+ Origin   Group
+ 058F:0   DGROUP
+
+  Address         Publics by Name
+
+ 0000:1DDA       $i4_m4
+ 058F:024A       $i8_implicit_exp
+ 058F:0248       $i8_inpbas
+ 0000:0FA5       $i8_input
+ 058F:0249       $i8_input_ws
+ 0000:1E4E       $i8_m8
+ 0000:13E7       $i8_output
+ 0000:16A8       $i8_tpwr10
+ 0000:1DAB       $m4_i4
+ 0000:1DF3       $m8_i8
+ 0000:232E       fFYTOX
+ 0000:FE32  Abs  FIARQQ
+ 0000:0E32  Abs  FICRQQ
+ 0000:5C32  Abs  FIDRQQ
+ 0000:1632  Abs  FIERQQ
+ 0000:0632  Abs  FISRQQ
+ 0000:A23D  Abs  FIWRQQ
+ 0000:4000  Abs  FJARQQ
+ 0000:C000  Abs  FJCRQQ
+ 0000:8000  Abs  FJSRQQ
+ 058F:00EC       STKHQQ
+ 0000:0E90       _abs
+ 0000:2029       _acos
+ 0000:2023       _asin
+ 0000:202E       _atan
+ 0000:2033       _atan2
+ 0000:0D60       _atof
+ 0000:1FBF       _cabs
+ 0000:1EF1       _ceil
+ 0000:2009       _cos
+ 0000:2055       _cosh
+ 0000:1EAA       _dieeetomsbin
+ 0000:1EA5       _dmsbintoieee
+ 058F:0C3C       _edata
+ 058F:0C50       _end
+ 058F:00DA       _environ
+ 058F:00B3       _errno
+ 0000:0010       _example_abs
+ 0000:002A       _example_acos
+ 0000:004E       _example_asin
+ 0000:0072       _example_atan
+ 0000:0096       _example_atan2
+ 0000:00CA       _example_atof
+ 0000:00E4       _example_cabs
+ 0000:011E       _example_ceil
+ 0000:0142       _example_cos
+ 0000:0166       _example_cosh
+ 0000:018A       _example_dieeetomsbin
+ 0000:01AE       _example_dmsbintoieee
+ 0000:01D2       _example_exp
+ 0000:01F6       _example_fabs
+ 0000:021A       _example_fieeetomsbin
+ 0000:023E       _example_floor
+ 0000:0262       _example_fmod
+ 0000:029C       _example_fmsbintoieee
+ 0000:02C0       _example_frexp
+ 0000:02EE       _example_hypot
+ 0000:0328       _example_j0
+ 0000:034C       _example_j1
+ 0000:0370       _example_jn
+ 0000:039C       _example_labs
+ 0000:03BE       _example_ldexp
+ 0000:03F2       _example_log
+ 0000:0416       _example_log10
+ 0000:043A       _example_matherr
+ 0000:046E       _example_modf
+ 0000:049C       _example_pow
+ 0000:04D6       _example_sin
+ 0000:04FA       _example_sinh
+ 0000:051E       _example_sqrt
+ 0000:0542       _example_tan
+ 0000:0566       _example_tanh
+ 0000:058A       _example_y0
+ 0000:05AE       _example_y1
+ 0000:05D2       _example_yn
+ 0000:07F0       _exit
+ 0000:1FE8       _exp
+ 0000:1F0A       _fabs
+ 0000:1EA0       _fieeetomsbin
+ 0000:1F56       _floor
+ 0000:1FA2       _fmod
+ 0000:1E9B       _fmsbintoieee
+ 0000:17D1       _frexp
+ 058F:0328       _HUGE
+ 0000:1FC5       _hypot
+ 0000:27E1       _j0
+ 0000:2964       _j1
+ 0000:2EE4       _jn
+ 0000:0EA6       _labs
+ 0000:1844       _ldexp
+ 0000:1FDD       _log
+ 0000:1FE3       _log10
+ 0000:05FE       _main
+ 0000:21F1       _matherr
+ 0000:0E1A       _memmove
+ 0000:0E62       _memset
+ 0000:18A5       _modf
+ 0000:1FD7       _pow
+ 0000:2003       _sin
+ 0000:204F       _sinh
+ 0000:1FCB       _sqrt
+ 0000:0D00       _stackavail
+ 0000:0D12       _strcpy
+ 0000:0D44       _strlen
+ 0000:200E       _tan
+ 0000:205A       _tanh
+ 0000:0BD8       _write
+ 0000:2B07       _y0
+ 0000:2CE9       _y1
+ 0000:3125       _yn
+ 058F:0098       __abrkp
+ 058F:0048       __abrktb
+ 058F:0098       __abrktbe
+ 058F:009A       __acfinfo
+ 0000:9876  Abs  __acrtmsg
+ 0000:9876  Abs  __acrtused
+ 058F:0504       __acsjmptab
+ 058F:00EA       __adbgmsg
+ 058F:0046       __aexit_rtn
+ 058F:00A7       __aintdiv
+ 0000:071C       __amsg_exit
+ 058F:0042       __asizds
+ 058F:0112       __asizeC
+ 058F:0113       __asizeD
+ 058F:04EC       __asnjmptab
+ 0000:0678       __astart
+ 058F:0534       __atn2jmptab
+ 058F:051C       __atnjmptab
+ 058F:0044       __atopsp
+ 0000:22FF       __cabs
+ 058F:0358       __cabsjmptab
+ 0000:1D36       __cfltcvt
+ 058F:0104       __cfltcvt_tab
+ 0000:19F2       __cftoe
+ 0000:1B4D       __cftof
+ 0000:1C80       __cftog
+ 058F:00E2       __child
+ 0000:08C2       __chkstk
+ 0000:203F       __CIacos
+ 0000:2039       __CIasin
+ 0000:2044       __CIatan
+ 0000:2049       __CIatan2
+ 0000:1EC6       __CIceil
+ 0000:2019       __CIcos
+ 0000:2065       __CIcosh
+ 0000:1FFE       __CIexp
+ 0000:1F2B       __CIfloor
+ 0000:1F6F       __CIfmod
+ 0000:1FF3       __CIlog
+ 0000:1FF9       __CIlog10
+ 0000:072C       __cinit
+ 0000:070D       __cintDIV
+ 0000:2098       __cintrindisp1
+ 0000:206F       __cintrindisp2
+ 0000:1FED       __CIpow
+ 0000:2013       __CIsin
+ 0000:205F       __CIsinh
+ 0000:1FD1       __CIsqrt
+ 0000:201E       __CItan
+ 0000:206A       __CItanh
+ 058F:057C       __coshjmptab
+ 058F:04A4       __cosjmptab
+ 058F:04D4       __cotanjmptab
+ 058F:0346       __cpower
+ 0000:193D       __cropzeros
+ 0000:084C       __ctermsub
+ 0000:20C9       __ctrandisp1
+ 0000:20B6       __ctrandisp2
+ 058F:0114       __ctype
+ 058F:0114       __ctype_
+ 058F:00BE       __doserrno
+ 0000:0B84       __dosret0
+ 0000:0B97       __dosretax
+ 0000:0B8C       __dosreturn
+ 058F:00BB       __dosvermajor
+ 058F:00BC       __dosverminor
+ 0000:0807       __exit
+ 058F:0462       __expjmptab
+ 058F:00AB       __fac
+ 0000:0ED7       __fadd
+ 0000:0F19       __faddd
+ 0000:19AF       __fassign
+ 0000:0F01       __fchs
+ 0000:1795       __fcmp
+ 0000:17B8       __fcompp
+ 0000:0EEF       __fdiv
+ 0000:0F31       __fdivd
+ 0000:0F37       __fdivdr
+ 0000:0EF5       __fdivr
+ 0000:0EFB       __fdup
+ 0000:2592       __fFATN2
+ 0000:24AD       __fFCOS
+ 0000:2680       __fFCOSH
+ 0000:233A       __fFEXP
+ 0000:2462       __ffexpm1
+ 0000:23E7       __fFLN
+ 0000:24B9       __fFSIN
+ 0000:263D       __fFSINH
+ 0000:089C       __FF_MSGBANNER
+ 0000:0F07       __fldd
+ 0000:0F43       __fldl
+ 0000:0F49       __fldq
+ 0000:0F3D       __fldw
+ 0000:170C       __fltin
+ 0000:16E5       __fltinf
+ 0000:174F       __fltout
+ 0000:9876  Abs  __fltused
+ 0000:0EDD       __fmul
+ 0000:0F1F       __fmuld
+ 0000:18E7       __forcdecpt
+ 0333:072E       __fpemulator
+ 0333:01B6       __FPEXCEPTION87
+ 058F:095A       __fpinit
+ 0333:23EA       __FPINSTALL87
+ 0333:0024       __fpmath
+ 0000:0F6B       __fpsignal
+ 0579:0160       __fptaskdata
+ 0333:2419       __FPTERMINATE87
+ 0000:0DA0       __fptostr
+ 0000:08BC       __fptrap
+ 0000:0F13       __fstd
+ 0000:0F0D       __fstdp
+ 0000:0EE3       __fsub
+ 0000:0F25       __fsubd
+ 0000:0F2B       __fsubdr
+ 0000:0EE9       __fsubr
+ 058F:0388       __hypotjmptab
+ 058F:0332       __indefinite
+ 058F:03D0       __infinity
+ 058F:00E5       __intno
+ 058F:044A       __lnjmptab
+ 058F:03DA       __logemax
+ 058F:0432       __logjmptab
+ 0000:0BA4       __maperror
+ 058F:0330       __matherr_flag
+ 0000:0B42       __myalloc
+ 058F:00C0       __nfile
+ 0000:0AEE       __NMSG_TEXT
+ 0000:0B19       __NMSG_WRITE
+ 0000:08D8       __nullcheck
+ 058F:00BE       __oserr
+ 058F:00C2       __osfile
+ 058F:00BB       __osmajor
+ 058F:00BC       __osminor
+ 058F:00BD       __osmode
+ 058F:00BB       __osversion
+ 058F:00E4       __ovlflag
+ 058F:00E6       __ovlvec
+ 058F:00DC       __pgmptr
+ 058F:033C       __piby2
+ 0000:1991       __positive
+ 058F:00B9       __psp
+ 058F:00B7       __pspadr
+ 0000:22C8       __rtbignan
+ 0000:22F7       __rtchsifneg
+ 0000:22EE       __rtifprojnpop
+ 0000:22CF       __rtifprojpop
+ 0000:22D9       __rtindfnpop
+ 0000:22D6       __rtindfpop
+ 0000:2447       __rtinfnpop
+ 0000:23DA       __rtinfnpopse
+ 0000:2444       __rtinfpop
+ 0000:23D7       __rtinfpopse
+ 0000:22AB       __rtnospop
+ 0000:22AF       __rtnospopde
+ 0000:22C1       __rtonenpop
+ 0000:22BE       __rtonepop
+ 0000:2607       __rtpiby2
+ 0000:22AE       __rttosnpop
+ 0000:22E7       __rttosnpopde
+ 0000:22A8       __rttospop
+ 0000:22A5       __rttospopde
+ 0000:22B7       __rtzeronpop
+ 0000:22B4       __rtzeropop
+ 0000:08FA       __setargv
+ 0000:0A88       __setenvp
+ 058F:0110       __sigintoff
+ 058F:010E       __sigintseg
+ 058F:0564       __sinhjmptab
+ 058F:048C       __sinjmptab
+ 058F:03B8       __sqrtjmptab
+ 058F:0594       __tanhjmptab
+ 058F:04BC       __tanjmptab
+ 0000:2200       __trandisp1
+ 0000:2242       __trandisp2
+ 058F:00B5       __umaskval
+ 0000:0EC8       __wrt2err
+ 058F:0402       __ytoxjmptab
+ 058F:00D6       ___argc
+ 058F:00D8       ___argv
+
+  Address         Publics by Value
+
+ 0000:0010       _example_abs
+ 0000:002A       _example_acos
+ 0000:004E       _example_asin
+ 0000:0072       _example_atan
+ 0000:0096       _example_atan2
+ 0000:00CA       _example_atof
+ 0000:00E4       _example_cabs
+ 0000:011E       _example_ceil
+ 0000:0142       _example_cos
+ 0000:0166       _example_cosh
+ 0000:018A       _example_dieeetomsbin
+ 0000:01AE       _example_dmsbintoieee
+ 0000:01D2       _example_exp
+ 0000:01F6       _example_fabs
+ 0000:021A       _example_fieeetomsbin
+ 0000:023E       _example_floor
+ 0000:0262       _example_fmod
+ 0000:029C       _example_fmsbintoieee
+ 0000:02C0       _example_frexp
+ 0000:02EE       _example_hypot
+ 0000:0328       _example_j0
+ 0000:034C       _example_j1
+ 0000:0370       _example_jn
+ 0000:039C       _example_labs
+ 0000:03BE       _example_ldexp
+ 0000:03F2       _example_log
+ 0000:0416       _example_log10
+ 0000:043A       _example_matherr
+ 0000:046E       _example_modf
+ 0000:049C       _example_pow
+ 0000:04D6       _example_sin
+ 0000:04FA       _example_sinh
+ 0000:051E       _example_sqrt
+ 0000:0542       _example_tan
+ 0000:0566       _example_tanh
+ 0000:058A       _example_y0
+ 0000:05AE       _example_y1
+ 0000:05D2       _example_yn
+ 0000:05FE       _main
+ 0000:0632  Abs  FISRQQ
+ 0000:0678       __astart
+ 0000:070D       __cintDIV
+ 0000:071C       __amsg_exit
+ 0000:072C       __cinit
+ 0000:07F0       _exit
+ 0000:0807       __exit
+ 0000:084C       __ctermsub
+ 0000:089C       __FF_MSGBANNER
+ 0000:08BC       __fptrap
+ 0000:08C2       __chkstk
+ 0000:08D8       __nullcheck
+ 0000:08FA       __setargv
+ 0000:0A88       __setenvp
+ 0000:0AEE       __NMSG_TEXT
+ 0000:0B19       __NMSG_WRITE
+ 0000:0B42       __myalloc
+ 0000:0B84       __dosret0
+ 0000:0B8C       __dosreturn
+ 0000:0B97       __dosretax
+ 0000:0BA4       __maperror
+ 0000:0BD8       _write
+ 0000:0D00       _stackavail
+ 0000:0D12       _strcpy
+ 0000:0D44       _strlen
+ 0000:0D60       _atof
+ 0000:0DA0       __fptostr
+ 0000:0E1A       _memmove
+ 0000:0E32  Abs  FICRQQ
+ 0000:0E62       _memset
+ 0000:0E90       _abs
+ 0000:0EA6       _labs
+ 0000:0EC8       __wrt2err
+ 0000:0ED7       __fadd
+ 0000:0EDD       __fmul
+ 0000:0EE3       __fsub
+ 0000:0EE9       __fsubr
+ 0000:0EEF       __fdiv
+ 0000:0EF5       __fdivr
+ 0000:0EFB       __fdup
+ 0000:0F01       __fchs
+ 0000:0F07       __fldd
+ 0000:0F0D       __fstdp
+ 0000:0F13       __fstd
+ 0000:0F19       __faddd
+ 0000:0F1F       __fmuld
+ 0000:0F25       __fsubd
+ 0000:0F2B       __fsubdr
+ 0000:0F31       __fdivd
+ 0000:0F37       __fdivdr
+ 0000:0F3D       __fldw
+ 0000:0F43       __fldl
+ 0000:0F49       __fldq
+ 0000:0F6B       __fpsignal
+ 0000:0FA5       $i8_input
+ 0000:13E7       $i8_output
+ 0000:1632  Abs  FIERQQ
+ 0000:16A8       $i8_tpwr10
+ 0000:16E5       __fltinf
+ 0000:170C       __fltin
+ 0000:174F       __fltout
+ 0000:1795       __fcmp
+ 0000:17B8       __fcompp
+ 0000:17D1       _frexp
+ 0000:1844       _ldexp
+ 0000:18A5       _modf
+ 0000:18E7       __forcdecpt
+ 0000:193D       __cropzeros
+ 0000:1991       __positive
+ 0000:19AF       __fassign
+ 0000:19F2       __cftoe
+ 0000:1B4D       __cftof
+ 0000:1C80       __cftog
+ 0000:1D36       __cfltcvt
+ 0000:1DAB       $m4_i4
+ 0000:1DDA       $i4_m4
+ 0000:1DF3       $m8_i8
+ 0000:1E4E       $i8_m8
+ 0000:1E9B       _fmsbintoieee
+ 0000:1EA0       _fieeetomsbin
+ 0000:1EA5       _dmsbintoieee
+ 0000:1EAA       _dieeetomsbin
+ 0000:1EC6       __CIceil
+ 0000:1EF1       _ceil
+ 0000:1F0A       _fabs
+ 0000:1F2B       __CIfloor
+ 0000:1F56       _floor
+ 0000:1F6F       __CIfmod
+ 0000:1FA2       _fmod
+ 0000:1FBF       _cabs
+ 0000:1FC5       _hypot
+ 0000:1FCB       _sqrt
+ 0000:1FD1       __CIsqrt
+ 0000:1FD7       _pow
+ 0000:1FDD       _log
+ 0000:1FE3       _log10
+ 0000:1FE8       _exp
+ 0000:1FED       __CIpow
+ 0000:1FF3       __CIlog
+ 0000:1FF9       __CIlog10
+ 0000:1FFE       __CIexp
+ 0000:2003       _sin
+ 0000:2009       _cos
+ 0000:200E       _tan
+ 0000:2013       __CIsin
+ 0000:2019       __CIcos
+ 0000:201E       __CItan
+ 0000:2023       _asin
+ 0000:2029       _acos
+ 0000:202E       _atan
+ 0000:2033       _atan2
+ 0000:2039       __CIasin
+ 0000:203F       __CIacos
+ 0000:2044       __CIatan
+ 0000:2049       __CIatan2
+ 0000:204F       _sinh
+ 0000:2055       _cosh
+ 0000:205A       _tanh
+ 0000:205F       __CIsinh
+ 0000:2065       __CIcosh
+ 0000:206A       __CItanh
+ 0000:206F       __cintrindisp2
+ 0000:2098       __cintrindisp1
+ 0000:20B6       __ctrandisp2
+ 0000:20C9       __ctrandisp1
+ 0000:21F1       _matherr
+ 0000:2200       __trandisp1
+ 0000:2242       __trandisp2
+ 0000:22A5       __rttospopde
+ 0000:22A8       __rttospop
+ 0000:22AB       __rtnospop
+ 0000:22AE       __rttosnpop
+ 0000:22AF       __rtnospopde
+ 0000:22B4       __rtzeropop
+ 0000:22B7       __rtzeronpop
+ 0000:22BE       __rtonepop
+ 0000:22C1       __rtonenpop
+ 0000:22C8       __rtbignan
+ 0000:22CF       __rtifprojpop
+ 0000:22D6       __rtindfpop
+ 0000:22D9       __rtindfnpop
+ 0000:22E7       __rttosnpopde
+ 0000:22EE       __rtifprojnpop
+ 0000:22F7       __rtchsifneg
+ 0000:22FF       __cabs
+ 0000:232E       fFYTOX
+ 0000:233A       __fFEXP
+ 0000:23D7       __rtinfpopse
+ 0000:23DA       __rtinfnpopse
+ 0000:23E7       __fFLN
+ 0000:2444       __rtinfpop
+ 0000:2447       __rtinfnpop
+ 0000:2462       __ffexpm1
+ 0000:24AD       __fFCOS
+ 0000:24B9       __fFSIN
+ 0000:2592       __fFATN2
+ 0000:2607       __rtpiby2
+ 0000:263D       __fFSINH
+ 0000:2680       __fFCOSH
+ 0000:27E1       _j0
+ 0000:2964       _j1
+ 0000:2B07       _y0
+ 0000:2CE9       _y1
+ 0000:2EE4       _jn
+ 0000:3125       _yn
+ 0333:0024       __fpmath
+ 0333:01B6       __FPEXCEPTION87
+ 0333:072E       __fpemulator
+ 0000:4000  Abs  FJARQQ
+ 0333:23EA       __FPINSTALL87
+ 0333:2419       __FPTERMINATE87
+ 0579:0160       __fptaskdata
+ 058F:0042       __asizds
+ 058F:0044       __atopsp
+ 058F:0046       __aexit_rtn
+ 058F:0048       __abrktb
+ 058F:0098       __abrktbe
+ 058F:0098       __abrkp
+ 058F:009A       __acfinfo
+ 058F:00A7       __aintdiv
+ 058F:00AB       __fac
+ 058F:00B3       _errno
+ 058F:00B5       __umaskval
+ 058F:00B7       __pspadr
+ 058F:00B9       __psp
+ 058F:00BB       __osversion
+ 058F:00BB       __dosvermajor
+ 058F:00BB       __osmajor
+ 058F:00BC       __osminor
+ 058F:00BC       __dosverminor
+ 058F:00BD       __osmode
+ 058F:00BE       __oserr
+ 058F:00BE       __doserrno
+ 058F:00C0       __nfile
+ 058F:00C2       __osfile
+ 058F:00D6       ___argc
+ 058F:00D8       ___argv
+ 058F:00DA       _environ
+ 058F:00DC       __pgmptr
+ 058F:00E2       __child
+ 058F:00E4       __ovlflag
+ 058F:00E5       __intno
+ 058F:00E6       __ovlvec
+ 058F:00EA       __adbgmsg
+ 058F:00EC       STKHQQ
+ 058F:0104       __cfltcvt_tab
+ 058F:010E       __sigintseg
+ 058F:0110       __sigintoff
+ 058F:0112       __asizeC
+ 058F:0113       __asizeD
+ 058F:0114       __ctype
+ 058F:0114       __ctype_
+ 058F:0248       $i8_inpbas
+ 058F:0249       $i8_input_ws
+ 058F:024A       $i8_implicit_exp
+ 058F:0328       _HUGE
+ 058F:0330       __matherr_flag
+ 058F:0332       __indefinite
+ 058F:033C       __piby2
+ 0000:5C32  Abs  FIDRQQ
+ 058F:0346       __cpower
+ 058F:0358       __cabsjmptab
+ 058F:0388       __hypotjmptab
+ 058F:03B8       __sqrtjmptab
+ 058F:03D0       __infinity
+ 058F:03DA       __logemax
+ 058F:0402       __ytoxjmptab
+ 058F:0432       __logjmptab
+ 058F:044A       __lnjmptab
+ 058F:0462       __expjmptab
+ 058F:048C       __sinjmptab
+ 058F:04A4       __cosjmptab
+ 058F:04BC       __tanjmptab
+ 058F:04D4       __cotanjmptab
+ 058F:04EC       __asnjmptab
+ 058F:0504       __acsjmptab
+ 058F:051C       __atnjmptab
+ 058F:0534       __atn2jmptab
+ 058F:0564       __sinhjmptab
+ 058F:057C       __coshjmptab
+ 058F:0594       __tanhjmptab
+ 058F:095A       __fpinit
+ 058F:0C3C       _edata
+ 058F:0C50       _end
+ 0000:8000  Abs  FJSRQQ
+ 0000:9876  Abs  __acrtmsg
+ 0000:9876  Abs  __fltused
+ 0000:9876  Abs  __acrtused
+ 0000:A23D  Abs  FIWRQQ
+ 0000:C000  Abs  FJCRQQ
+ 0000:FE32  Abs  FIARQQ
+
+Program entry point at 0000:0678

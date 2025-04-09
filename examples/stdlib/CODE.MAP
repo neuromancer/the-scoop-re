@@ -1,0 +1,577 @@
+
+ Start  Stop   Length Name                   Class
+ 00000H 03767H 03768H _TEXT                  CODE
+ 03770H 05BCFH 02460H EMULATOR_TEXT          CODE
+ 05BD0H 05BD0H 00000H C_ETEXT                ENDCODE
+ 05BD0H 05BD0H 00000H FAR_HDR                FAR_MSG
+ 05BD0H 05BD0H 00000H FAR_MSG                FAR_MSG
+ 05BD0H 05BD0H 00000H FAR_PAD                FAR_MSG
+ 05BD0H 05BD0H 00000H FAR_EPAD               FAR_MSG
+ 05BD0H 05D2FH 00160H EMULATOR_DATA          FAR_DATA
+ 05D30H 05D71H 00042H NULL                   BEGDATA
+ 05D72H 06274H 00503H _DATA                  DATA
+ 06276H 06283H 0000EH CDATA                  DATA
+ 06284H 06284H 00000H XIFB                   DATA
+ 06284H 06284H 00000H XIF                    DATA
+ 06284H 06284H 00000H XIFE                   DATA
+ 06284H 06284H 00000H XIB                    DATA
+ 06284H 06285H 00002H XI                     DATA
+ 06286H 06286H 00000H XIE                    DATA
+ 06286H 06286H 00000H XPB                    DATA
+ 06286H 06286H 00000H XP                     DATA
+ 06286H 06286H 00000H XPE                    DATA
+ 06286H 06286H 00000H XCB                    DATA
+ 06286H 06286H 00000H XC                     DATA
+ 06286H 06286H 00000H XCE                    DATA
+ 06286H 06286H 00000H XCFB                   DATA
+ 06286H 06286H 00000H XCF                    DATA
+ 06286H 06286H 00000H XCFE                   DATA
+ 06286H 06287H 00002H EXEC                   DATA
+ 06288H 06337H 000B0H CONST                  CONST
+ 06338H 0633FH 00008H HDR                    MSG
+ 06340H 06505H 001C6H MSG                    MSG
+ 06506H 06518H 00013H PAD                    MSG
+ 06519H 06519H 00001H EPAD                   MSG
+ 0651AH 06693H 0017AH _BSS                   BSS
+ 06694H 06694H 00000H XOB                    BSS
+ 06694H 066D3H 00040H XO                     BSS
+ 066D4H 066D4H 00000H XOE                    BSS
+ 066E0H 06EDFH 00800H STACK                  STACK
+
+ Origin   Group
+ 05D3:0   DGROUP
+ 05BD:0   FMGROUP
+
+  Address         Publics by Name
+
+ 05D3:0494       $i8_implicit_exp
+ 05D3:0492       $i8_inpbas
+ 0000:2A78       $i8_input
+ 05D3:0493       $i8_input_ws
+ 0000:2EBA       $i8_output
+ 0000:317B       $i8_tpwr10
+ 0000:FE32  Abs  FIARQQ
+ 0000:0E32  Abs  FICRQQ
+ 0000:5C32  Abs  FIDRQQ
+ 0000:1632  Abs  FIERQQ
+ 0000:0632  Abs  FISRQQ
+ 0000:A23D  Abs  FIWRQQ
+ 0000:4000  Abs  FJARQQ
+ 0000:C000  Abs  FJCRQQ
+ 0000:8000  Abs  FJSRQQ
+ 05D3:0100       STKHQQ
+ 0000:1188       _abort
+ 0000:19E6       _abs
+ 0000:2890       _access
+ 0000:1B94       _atexit
+ 0000:1016       _atof
+ 0000:100E       _atoi
+ 0000:1012       _atol
+ 0000:14F6       _bdos
+ 0000:0E5A       _brkctl
+ 0000:19FC       _bsearch
+ 0000:0E06       _calloc
+ 0000:13E8       _div
+ 0000:0010       _dummy_atexit_func
+ 0000:001E       _dummy_compare_func
+ 0000:0016       _dummy_onexit_func
+ 0000:16FE       _ecvt
+ 05D3:07EA       _edata
+ 05D3:09B0       _end
+ 05D3:00EE       _environ
+ 05D3:00C7       _errno
+ 0000:005A       _example_abort
+ 0000:0064       _example_abs
+ 0000:007C       _example_atexit
+ 0000:0094       _example_atof
+ 0000:00BA       _example_atoi
+ 0000:00D2       _example_atol
+ 0000:00EC       _example_bsearch
+ 0000:0118       _example_calloc
+ 0000:0134       _example_div
+ 0000:0152       _example_ecvt
+ 0000:0180       _example_exit
+ 0000:0196       _example_fcvt
+ 0000:01C4       _example_free
+ 0000:01D4       _example_gcvt
+ 0000:01FE       _example_getenv
+ 0000:0216       _example_itoa
+ 0000:0236       _example_labs
+ 0000:0254       _example_ldiv
+ 0000:02C8       _example_ltoa
+ 0000:0310       _example_malloc
+ 0000:0328       _example_onexit
+ 0000:0340       _example_perror
+ 0000:0350       _example_putenv
+ 0000:0368       _example_qsort
+ 0000:03BC       _example_rand
+ 0000:03D0       _example_realloc
+ 0000:0424       _example_srand
+ 0000:0434       _example_strtod
+ 0000:045E       _example_strtol
+ 0000:0480       _example_strtoul
+ 0000:04A2       _example_swab
+ 0000:04BE       _example_system
+ 0000:04F8       _example_tolower
+ 0000:0510       _example_toupper
+ 0000:04D4       _example_ultoa
+ 0000:0190       _example__exit
+ 0000:0284       _example__lrotl
+ 0000:02A6       _example__lrotr
+ 0000:02EC       _example__makepath
+ 0000:0384       _example__rotl
+ 0000:03A0       _example__rotr
+ 0000:03E4       _example__searchenv
+ 0000:0400       _example__splitpath
+ 0000:072A       _exit
+ 0000:16CA       _fcvt
+ 0000:0C4C       _free
+ 0000:176A       _gcvt
+ 0000:28B0       _getcwd
+ 0000:11A4       _getenv
+ 05D3:053C       _HUGE
+ 0000:1508       _intdos
+ 0000:10AA       _itoa
+ 0000:1A96       _labs
+ 0000:1AB8       _ldiv
+ 0000:10C6       _ltoa
+ 0000:0528       _main
+ 0000:0C5E       _malloc
+ 0000:15EE       _memcpy
+ 0000:15A6       _memmove
+ 0000:161A       _memset
+ 0000:1B9D       _onexit
+ 0000:11FA       _perror
+ 0000:1278       _putenv
+ 0000:1BC2       _qsort
+ 0000:1D2E       _raise
+ 0000:1DCA       _rand
+ 0000:13F6       _realloc
+ 05D3:0042       _search_data
+ 0000:1DF6       _signal
+ 05D3:004C       _sort_data
+ 0000:25A8       _spawnve
+ 0000:26FA       _spawnvpe
+ 0000:1DB8       _srand
+ 0000:0C3A       _stackavail
+ 0000:0F1E       _strcat
+ 0000:1550       _strchr
+ 0000:0F5E       _strcpy
+ 0000:0F90       _strlen
+ 0000:0FD4       _strncmp
+ 0000:0FAC       _strncpy
+ 0000:157A       _strrchr
+ 0000:1812       _strtod
+ 0000:18F0       _strtol
+ 0000:18E2       _strtoul
+ 0000:16A8       _swab
+ 0000:27EC       _system
+ 05D3:03AA       _sys_errlist
+ 05D3:03F6       _sys_nerr
+ 0000:1154       _tolower
+ 0000:116E       _toupper
+ 0000:114A       _ultoa
+ 0000:0B12       _write
+ 05D3:00AC       __abrkp
+ 05D3:005C       __abrktb
+ 05D3:00AC       __abrktbe
+ 05D3:00AE       __acfinfo
+ 0000:9876  Abs  __acrtmsg
+ 0000:9876  Abs  __acrtused
+ 05D3:00FE       __adbgmsg
+ 05D3:005A       __aexit_rtn
+ 05D3:00BB       __aintdiv
+ 0000:0CA7       __amalloc
+ 0000:0DE6       __amallocbrk
+ 05D3:0128       __amblksiz
+ 0000:0D8A       __amexpand
+ 0000:0DC4       __amlink
+ 0000:0656       __amsg_exit
+ 0000:2976       __aNlmul
+ 0000:2976       __aNulmul
+ 05D3:0122       __aseg1
+ 05D3:0118       __asegds
+ 05D3:012A       __asegh
+ 05D3:0124       __asegn
+ 05D3:0126       __asegr
+ 05D3:0056       __asizds
+ 05D3:013C       __asizeC
+ 05D3:013D       __asizeD
+ 0000:05B2       __astart
+ 05D3:0058       __atopsp
+ 0000:1056       __catox
+ 0000:2286       __cenvarg
+ 0000:36F3       __cfltcvt
+ 05D3:012E       __cfltcvt_tab
+ 0000:33AF       __cftoe
+ 0000:350A       __cftof
+ 0000:363D       __cftog
+ 05D3:00F6       __child
+ 0000:07FC       __chkstk
+ 0000:0666       __cinit
+ 0000:0647       __cintDIV
+ 0000:1648       __cltoasub
+ 0000:32FA       __cropzeros
+ 05D3:025A       __csigtab0
+ 0000:0786       __ctermsub
+ 05D3:013E       __ctype
+ 05D3:013E       __ctype_
+ 0000:1654       __cxtoa
+ 05D3:00D2       __doserrno
+ 0000:24C6       __dospawn
+ 0000:0ABE       __dosret0
+ 0000:0AD1       __dosretax
+ 0000:0AC6       __dosreturn
+ 05D3:00CF       __dosvermajor
+ 05D3:00D0       __dosverminor
+ 0000:287C       __execload
+ 0000:0741       __exit
+ 0000:1462       __expand
+ 05D3:00BF       __fac
+ 0000:29AA       __fadd
+ 0000:29EC       __faddd
+ 0000:336C       __fassign
+ 0000:29D4       __fchs
+ 0000:3268       __fcmp
+ 0000:328B       __fcompp
+ 0000:29C2       __fdiv
+ 0000:2A04       __fdivd
+ 0000:2A0A       __fdivdr
+ 0000:29C8       __fdivr
+ 0000:29CE       __fdup
+ 0000:07D6       __FF_MSGBANNER
+ 0000:29DA       __fldd
+ 0000:2A16       __fldl
+ 0000:2A1C       __fldq
+ 0000:2A10       __fldw
+ 0000:31DF       __fltin
+ 0000:31B8       __fltinf
+ 0000:3222       __fltout
+ 0000:9876  Abs  __fltused
+ 0000:29B0       __fmul
+ 0000:29F2       __fmuld
+ 0000:32A4       __forcdecpt
+ 0377:072E       __fpemulator
+ 0377:01B6       __FPEXCEPTION87
+ 05D3:0548       __fpinit
+ 0377:23EA       __FPINSTALL87
+ 0377:0024       __fpmath
+ 0000:2A3E       __fpsignal
+ 05BD:0160       __fptaskdata
+ 0377:2419       __FPTERMINATE87
+ 0000:10D0       __fptostr
+ 0000:07F6       __fptrap
+ 0000:29E6       __fstd
+ 0000:29E0       __fstdp
+ 0000:29B6       __fsub
+ 0000:29F8       __fsubd
+ 0000:29FE       __fsubdr
+ 0000:29BC       __fsubr
+ 0000:28C4       __getdcwd
+ 05D3:00F9       __intno
+ 0000:1F60       __lrotl
+ 0000:1F80       __lrotr
+ 0000:21FC       __makepath
+ 0000:0ADE       __maperror
+ 05D3:0544       __matherr_flag
+ 0000:0A7C       __myalloc
+ 05D3:00D4       __nfile
+ 0000:0C4C       __nfree
+ 0000:0C5E       __nmalloc
+ 0000:0A28       __NMSG_TEXT
+ 0000:0A53       __NMSG_WRITE
+ 0000:0812       __nullcheck
+ 05D3:00D2       __oserr
+ 05D3:00D6       __osfile
+ 05D3:00CF       __osmajor
+ 05D3:00D0       __osminor
+ 05D3:00D1       __osmode
+ 05D3:00CF       __osversion
+ 05D3:00F8       __ovlflag
+ 05D3:00FA       __ovlvec
+ 05D3:00F0       __pgmptr
+ 0000:334E       __positive
+ 05D3:00CD       __psp
+ 05D3:00CB       __pspadr
+ 05D3:012A       __QChdata
+ 0000:1FA0       __rotl
+ 0000:1FB0       __rotr
+ 0000:210E       __searchenv
+ 0000:0834       __setargv
+ 0000:09C2       __setenvp
+ 0000:1E8D       __sigentry
+ 05D3:013A       __sigintoff
+ 05D3:0138       __sigintseg
+ 0000:1FC0       __splitpath
+ 05D3:00C9       __umaskval
+ 0000:1F50       __wrt2err
+ 05D3:00EA       ___argc
+ 05D3:00EC       ___argv
+
+  Address         Publics by Value
+
+ 0000:0010       _dummy_atexit_func
+ 0000:0016       _dummy_onexit_func
+ 0000:001E       _dummy_compare_func
+ 0000:005A       _example_abort
+ 0000:0064       _example_abs
+ 0000:007C       _example_atexit
+ 0000:0094       _example_atof
+ 0000:00BA       _example_atoi
+ 0000:00D2       _example_atol
+ 0000:00EC       _example_bsearch
+ 0000:0118       _example_calloc
+ 0000:0134       _example_div
+ 0000:0152       _example_ecvt
+ 0000:0180       _example_exit
+ 0000:0190       _example__exit
+ 0000:0196       _example_fcvt
+ 0000:01C4       _example_free
+ 0000:01D4       _example_gcvt
+ 0000:01FE       _example_getenv
+ 0000:0216       _example_itoa
+ 0000:0236       _example_labs
+ 0000:0254       _example_ldiv
+ 0000:0284       _example__lrotl
+ 0000:02A6       _example__lrotr
+ 0000:02C8       _example_ltoa
+ 0000:02EC       _example__makepath
+ 0000:0310       _example_malloc
+ 0000:0328       _example_onexit
+ 0000:0340       _example_perror
+ 0000:0350       _example_putenv
+ 0000:0368       _example_qsort
+ 0000:0384       _example__rotl
+ 0000:03A0       _example__rotr
+ 0000:03BC       _example_rand
+ 0000:03D0       _example_realloc
+ 0000:03E4       _example__searchenv
+ 0000:0400       _example__splitpath
+ 0000:0424       _example_srand
+ 0000:0434       _example_strtod
+ 0000:045E       _example_strtol
+ 0000:0480       _example_strtoul
+ 0000:04A2       _example_swab
+ 0000:04BE       _example_system
+ 0000:04D4       _example_ultoa
+ 0000:04F8       _example_tolower
+ 0000:0510       _example_toupper
+ 0000:0528       _main
+ 0000:05B2       __astart
+ 0000:0632  Abs  FISRQQ
+ 0000:0647       __cintDIV
+ 0000:0656       __amsg_exit
+ 0000:0666       __cinit
+ 0000:072A       _exit
+ 0000:0741       __exit
+ 0000:0786       __ctermsub
+ 0000:07D6       __FF_MSGBANNER
+ 0000:07F6       __fptrap
+ 0000:07FC       __chkstk
+ 0000:0812       __nullcheck
+ 0000:0834       __setargv
+ 0000:09C2       __setenvp
+ 0000:0A28       __NMSG_TEXT
+ 0000:0A53       __NMSG_WRITE
+ 0000:0A7C       __myalloc
+ 0000:0ABE       __dosret0
+ 0000:0AC6       __dosreturn
+ 0000:0AD1       __dosretax
+ 0000:0ADE       __maperror
+ 0000:0B12       _write
+ 0000:0C3A       _stackavail
+ 0000:0C4C       __nfree
+ 0000:0C4C       _free
+ 0000:0C5E       _malloc
+ 0000:0C5E       __nmalloc
+ 0000:0CA7       __amalloc
+ 0000:0D8A       __amexpand
+ 0000:0DC4       __amlink
+ 0000:0DE6       __amallocbrk
+ 0000:0E06       _calloc
+ 0000:0E32  Abs  FICRQQ
+ 0000:0E5A       _brkctl
+ 0000:0F1E       _strcat
+ 0000:0F5E       _strcpy
+ 0000:0F90       _strlen
+ 0000:0FAC       _strncpy
+ 0000:0FD4       _strncmp
+ 0000:100E       _atoi
+ 0000:1012       _atol
+ 0000:1016       _atof
+ 0000:1056       __catox
+ 0000:10AA       _itoa
+ 0000:10C6       _ltoa
+ 0000:10D0       __fptostr
+ 0000:114A       _ultoa
+ 0000:1154       _tolower
+ 0000:116E       _toupper
+ 0000:1188       _abort
+ 0000:11A4       _getenv
+ 0000:11FA       _perror
+ 0000:1278       _putenv
+ 0000:13E8       _div
+ 0000:13F6       _realloc
+ 0000:1462       __expand
+ 0000:14F6       _bdos
+ 0000:1508       _intdos
+ 0000:1550       _strchr
+ 0000:157A       _strrchr
+ 0000:15A6       _memmove
+ 0000:15EE       _memcpy
+ 0000:161A       _memset
+ 0000:1632  Abs  FIERQQ
+ 0000:1648       __cltoasub
+ 0000:1654       __cxtoa
+ 0000:16A8       _swab
+ 0000:16CA       _fcvt
+ 0000:16FE       _ecvt
+ 0000:176A       _gcvt
+ 0000:1812       _strtod
+ 0000:18E2       _strtoul
+ 0000:18F0       _strtol
+ 0000:19E6       _abs
+ 0000:19FC       _bsearch
+ 0000:1A96       _labs
+ 0000:1AB8       _ldiv
+ 0000:1B94       _atexit
+ 0000:1B9D       _onexit
+ 0000:1BC2       _qsort
+ 0000:1D2E       _raise
+ 0000:1DB8       _srand
+ 0000:1DCA       _rand
+ 0000:1DF6       _signal
+ 0000:1E8D       __sigentry
+ 0000:1F50       __wrt2err
+ 0000:1F60       __lrotl
+ 0000:1F80       __lrotr
+ 0000:1FA0       __rotl
+ 0000:1FB0       __rotr
+ 0000:1FC0       __splitpath
+ 0000:210E       __searchenv
+ 0000:21FC       __makepath
+ 0000:2286       __cenvarg
+ 0000:24C6       __dospawn
+ 0000:25A8       _spawnve
+ 0000:26FA       _spawnvpe
+ 0000:27EC       _system
+ 0000:287C       __execload
+ 0000:2890       _access
+ 0000:28B0       _getcwd
+ 0000:28C4       __getdcwd
+ 0000:2976       __aNlmul
+ 0000:2976       __aNulmul
+ 0000:29AA       __fadd
+ 0000:29B0       __fmul
+ 0000:29B6       __fsub
+ 0000:29BC       __fsubr
+ 0000:29C2       __fdiv
+ 0000:29C8       __fdivr
+ 0000:29CE       __fdup
+ 0000:29D4       __fchs
+ 0000:29DA       __fldd
+ 0000:29E0       __fstdp
+ 0000:29E6       __fstd
+ 0000:29EC       __faddd
+ 0000:29F2       __fmuld
+ 0000:29F8       __fsubd
+ 0000:29FE       __fsubdr
+ 0000:2A04       __fdivd
+ 0000:2A0A       __fdivdr
+ 0000:2A10       __fldw
+ 0000:2A16       __fldl
+ 0000:2A1C       __fldq
+ 0000:2A3E       __fpsignal
+ 0000:2A78       $i8_input
+ 0000:2EBA       $i8_output
+ 0000:317B       $i8_tpwr10
+ 0000:31B8       __fltinf
+ 0000:31DF       __fltin
+ 0000:3222       __fltout
+ 0000:3268       __fcmp
+ 0000:328B       __fcompp
+ 0000:32A4       __forcdecpt
+ 0000:32FA       __cropzeros
+ 0000:334E       __positive
+ 0000:336C       __fassign
+ 0000:33AF       __cftoe
+ 0000:350A       __cftof
+ 0000:363D       __cftog
+ 0000:36F3       __cfltcvt
+ 0377:0024       __fpmath
+ 0377:01B6       __FPEXCEPTION87
+ 0377:072E       __fpemulator
+ 0000:4000  Abs  FJARQQ
+ 0377:23EA       __FPINSTALL87
+ 0377:2419       __FPTERMINATE87
+ 0000:5C32  Abs  FIDRQQ
+ 05BD:0160       __fptaskdata
+ 05D3:0042       _search_data
+ 05D3:004C       _sort_data
+ 05D3:0056       __asizds
+ 05D3:0058       __atopsp
+ 05D3:005A       __aexit_rtn
+ 05D3:005C       __abrktb
+ 05D3:00AC       __abrktbe
+ 05D3:00AC       __abrkp
+ 05D3:00AE       __acfinfo
+ 05D3:00BB       __aintdiv
+ 05D3:00BF       __fac
+ 05D3:00C7       _errno
+ 05D3:00C9       __umaskval
+ 05D3:00CB       __pspadr
+ 05D3:00CD       __psp
+ 05D3:00CF       __osmajor
+ 05D3:00CF       __dosvermajor
+ 05D3:00CF       __osversion
+ 05D3:00D0       __dosverminor
+ 05D3:00D0       __osminor
+ 05D3:00D1       __osmode
+ 05D3:00D2       __oserr
+ 05D3:00D2       __doserrno
+ 05D3:00D4       __nfile
+ 05D3:00D6       __osfile
+ 05D3:00EA       ___argc
+ 05D3:00EC       ___argv
+ 05D3:00EE       _environ
+ 05D3:00F0       __pgmptr
+ 05D3:00F6       __child
+ 05D3:00F8       __ovlflag
+ 05D3:00F9       __intno
+ 05D3:00FA       __ovlvec
+ 05D3:00FE       __adbgmsg
+ 05D3:0100       STKHQQ
+ 05D3:0118       __asegds
+ 05D3:0122       __aseg1
+ 05D3:0124       __asegn
+ 05D3:0126       __asegr
+ 05D3:0128       __amblksiz
+ 05D3:012A       __asegh
+ 05D3:012A       __QChdata
+ 05D3:012E       __cfltcvt_tab
+ 05D3:0138       __sigintseg
+ 05D3:013A       __sigintoff
+ 05D3:013C       __asizeC
+ 05D3:013D       __asizeD
+ 05D3:013E       __ctype_
+ 05D3:013E       __ctype
+ 05D3:025A       __csigtab0
+ 05D3:03AA       _sys_errlist
+ 05D3:03F6       _sys_nerr
+ 05D3:0492       $i8_inpbas
+ 05D3:0493       $i8_input_ws
+ 05D3:0494       $i8_implicit_exp
+ 05D3:053C       _HUGE
+ 05D3:0544       __matherr_flag
+ 05D3:0548       __fpinit
+ 05D3:07EA       _edata
+ 05D3:09B0       _end
+ 0000:8000  Abs  FJSRQQ
+ 0000:9876  Abs  __acrtmsg
+ 0000:9876  Abs  __acrtused
+ 0000:9876  Abs  __fltused
+ 0000:A23D  Abs  FIWRQQ
+ 0000:C000  Abs  FJCRQQ
+ 0000:FE32  Abs  FIARQQ
+
+Program entry point at 0000:05B2

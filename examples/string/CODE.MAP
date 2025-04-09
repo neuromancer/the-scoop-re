@@ -1,0 +1,321 @@
+
+ Start  Stop   Length Name                   Class
+ 00000H 012CDH 012CEH _TEXT                  CODE
+ 012CEH 012CEH 00000H C_ETEXT                ENDCODE
+ 012D0H 01311H 00042H NULL                   BEGDATA
+ 01312H 01561H 00250H _DATA                  DATA
+ 01562H 0156FH 0000EH CDATA                  DATA
+ 01570H 01570H 00000H XIFB                   DATA
+ 01570H 01570H 00000H XIF                    DATA
+ 01570H 01570H 00000H XIFE                   DATA
+ 01570H 01570H 00000H XIB                    DATA
+ 01570H 01570H 00000H XI                     DATA
+ 01570H 01570H 00000H XIE                    DATA
+ 01570H 01570H 00000H XPB                    DATA
+ 01570H 01570H 00000H XP                     DATA
+ 01570H 01570H 00000H XPE                    DATA
+ 01570H 01570H 00000H XCB                    DATA
+ 01570H 01570H 00000H XC                     DATA
+ 01570H 01570H 00000H XCE                    DATA
+ 01570H 01570H 00000H XCFB                   DATA
+ 01570H 01570H 00000H XCF                    DATA
+ 01570H 01570H 00000H XCFE                   DATA
+ 01570H 01570H 00000H CONST                  CONST
+ 01570H 01577H 00008H HDR                    MSG
+ 01578H 01645H 000CEH MSG                    MSG
+ 01646H 01647H 00002H PAD                    MSG
+ 01648H 01648H 00001H EPAD                   MSG
+ 0164AH 016EBH 000A2H _BSS                   BSS
+ 016ECH 016ECH 00000H XOB                    BSS
+ 016ECH 016ECH 00000H XO                     BSS
+ 016ECH 016ECH 00000H XOE                    BSS
+ 016F0H 01EEFH 00800H STACK                  STACK
+
+ Origin   Group
+ 012D:0   DGROUP
+
+  Address         Publics by Name
+
+ 012D:00EC       STKHQQ
+ 0000:0A8E       _brkctl
+ 012D:037A       _edata
+ 012D:0420       _end
+ 012D:00DA       _environ
+ 012D:00B3       _errno
+ 0000:0010       _example_memccpy
+ 0000:0030       _example_memchr
+ 0000:004C       _example_memcmp
+ 0000:0084       _example_memcpy
+ 0000:0068       _example_memicmp
+ 0000:00A0       _example_memmove
+ 0000:00BC       _example_memset
+ 0000:00D8       _example_movedata
+ 0000:0114       _example_strcat
+ 0000:012C       _example_strchr
+ 0000:0144       _example_strcmp
+ 0000:015C       _example_strcmpi
+ 0000:018C       _example_strcpy
+ 0000:01A4       _example_strcspn
+ 0000:01BC       _example_strdup
+ 0000:01E0       _example_strerror
+ 0000:0174       _example_stricmp
+ 0000:01F0       _example_strlen
+ 0000:0204       _example_strlwr
+ 0000:0218       _example_strncat
+ 0000:0234       _example_strncmp
+ 0000:026C       _example_strncpy
+ 0000:0250       _example_strnicmp
+ 0000:0288       _example_strnset
+ 0000:02A4       _example_strpbrk
+ 0000:02BC       _example_strrchr
+ 0000:02D4       _example_strrev
+ 0000:02E8       _example_strset
+ 0000:0300       _example_strspn
+ 0000:0318       _example_strstr
+ 0000:0330       _example_strtok
+ 0000:0348       _example_strupr
+ 0000:01D0       _example__strerror
+ 0000:0540       _exit
+ 0000:08D4       _free
+ 0000:035C       _main
+ 0000:08E6       _malloc
+ 0000:1090       _memccpy
+ 0000:10B8       _memchr
+ 0000:1174       _memcmp
+ 0000:119C       _memcpy
+ 0000:1124       _memicmp
+ 0000:10DC       _memmove
+ 0000:11C8       _memset
+ 0000:0CA4       _movedata
+ 0000:0B52       _strcat
+ 0000:0CC2       _strchr
+ 0000:0BC4       _strcmp
+ 0000:0CEC       _strcmpi
+ 0000:0B92       _strcpy
+ 0000:0E9E       _strcspn
+ 0000:0D2E       _strdup
+ 0000:129A       _strerror
+ 0000:0CEC       _stricmp
+ 0000:0BF0       _strlen
+ 0000:0E5A       _strlwr
+ 0000:0C0C       _strncat
+ 0000:0C6A       _strncmp
+ 0000:0C42       _strncpy
+ 0000:0D52       _strnicmp
+ 0000:0DAA       _strnset
+ 0000:0EF8       _strpbrk
+ 0000:0DD6       _strrchr
+ 0000:0E02       _strrev
+ 0000:0E36       _strset
+ 0000:0F50       _strspn
+ 0000:1034       _strstr
+ 0000:0FAA       _strtok
+ 0000:0E7C       _strupr
+ 012D:0244       _sys_errlist
+ 012D:0290       _sys_nerr
+ 012D:0098       __abrkp
+ 012D:0048       __abrktb
+ 012D:0098       __abrktbe
+ 012D:009A       __acfinfo
+ 0000:9876  Abs  __acrtmsg
+ 0000:9876  Abs  __acrtused
+ 012D:00EA       __adbgmsg
+ 012D:0046       __aexit_rtn
+ 012D:00A7       __aintdiv
+ 0000:092F       __amalloc
+ 0000:0A6E       __amallocbrk
+ 012D:0100       __amblksiz
+ 0000:0A12       __amexpand
+ 0000:0A4C       __amlink
+ 0000:046C       __amsg_exit
+ 012D:00FA       __aseg1
+ 012D:00F0       __asegds
+ 012D:0102       __asegh
+ 012D:00FC       __asegn
+ 012D:00FE       __asegr
+ 012D:0042       __asizds
+ 0000:03C8       __astart
+ 012D:0044       __atopsp
+ 012D:00E2       __child
+ 0000:0612       __chkstk
+ 0000:047C       __cinit
+ 0000:045D       __cintDIV
+ 0000:059C       __ctermsub
+ 012D:00BE       __doserrno
+ 012D:00BB       __dosvermajor
+ 012D:00BC       __dosverminor
+ 0000:0557       __exit
+ 012D:00AB       __fac
+ 0000:05EC       __FF_MSGBANNER
+ 012D:0294       __fpinit
+ 0000:060C       __fptrap
+ 012D:00E5       __intno
+ 0000:0892       __myalloc
+ 012D:00C0       __nfile
+ 0000:08D4       __nfree
+ 0000:08E6       __nmalloc
+ 0000:083E       __NMSG_TEXT
+ 0000:0869       __NMSG_WRITE
+ 0000:0628       __nullcheck
+ 012D:00BE       __oserr
+ 012D:00C2       __osfile
+ 012D:00BB       __osmajor
+ 012D:00BC       __osminor
+ 012D:00BD       __osmode
+ 012D:00BB       __osversion
+ 012D:00E4       __ovlflag
+ 012D:00E6       __ovlvec
+ 012D:00DC       __pgmptr
+ 012D:00B9       __psp
+ 012D:00B7       __pspadr
+ 012D:0102       __QChdata
+ 0000:064A       __setargv
+ 0000:07D8       __setenvp
+ 0000:11F6       __strerror
+ 012D:00B5       __umaskval
+ 012D:00D6       ___argc
+ 012D:00D8       ___argv
+
+  Address         Publics by Value
+
+ 0000:0010       _example_memccpy
+ 0000:0030       _example_memchr
+ 0000:004C       _example_memcmp
+ 0000:0068       _example_memicmp
+ 0000:0084       _example_memcpy
+ 0000:00A0       _example_memmove
+ 0000:00BC       _example_memset
+ 0000:00D8       _example_movedata
+ 0000:0114       _example_strcat
+ 0000:012C       _example_strchr
+ 0000:0144       _example_strcmp
+ 0000:015C       _example_strcmpi
+ 0000:0174       _example_stricmp
+ 0000:018C       _example_strcpy
+ 0000:01A4       _example_strcspn
+ 0000:01BC       _example_strdup
+ 0000:01D0       _example__strerror
+ 0000:01E0       _example_strerror
+ 0000:01F0       _example_strlen
+ 0000:0204       _example_strlwr
+ 0000:0218       _example_strncat
+ 0000:0234       _example_strncmp
+ 0000:0250       _example_strnicmp
+ 0000:026C       _example_strncpy
+ 0000:0288       _example_strnset
+ 0000:02A4       _example_strpbrk
+ 0000:02BC       _example_strrchr
+ 0000:02D4       _example_strrev
+ 0000:02E8       _example_strset
+ 0000:0300       _example_strspn
+ 0000:0318       _example_strstr
+ 0000:0330       _example_strtok
+ 0000:0348       _example_strupr
+ 0000:035C       _main
+ 0000:03C8       __astart
+ 0000:045D       __cintDIV
+ 0000:046C       __amsg_exit
+ 0000:047C       __cinit
+ 0000:0540       _exit
+ 0000:0557       __exit
+ 0000:059C       __ctermsub
+ 0000:05EC       __FF_MSGBANNER
+ 0000:060C       __fptrap
+ 0000:0612       __chkstk
+ 0000:0628       __nullcheck
+ 0000:064A       __setargv
+ 0000:07D8       __setenvp
+ 0000:083E       __NMSG_TEXT
+ 0000:0869       __NMSG_WRITE
+ 0000:0892       __myalloc
+ 0000:08D4       __nfree
+ 0000:08D4       _free
+ 0000:08E6       _malloc
+ 0000:08E6       __nmalloc
+ 0000:092F       __amalloc
+ 0000:0A12       __amexpand
+ 0000:0A4C       __amlink
+ 0000:0A6E       __amallocbrk
+ 0000:0A8E       _brkctl
+ 0000:0B52       _strcat
+ 0000:0B92       _strcpy
+ 0000:0BC4       _strcmp
+ 0000:0BF0       _strlen
+ 0000:0C0C       _strncat
+ 0000:0C42       _strncpy
+ 0000:0C6A       _strncmp
+ 0000:0CA4       _movedata
+ 0000:0CC2       _strchr
+ 0000:0CEC       _stricmp
+ 0000:0CEC       _strcmpi
+ 0000:0D2E       _strdup
+ 0000:0D52       _strnicmp
+ 0000:0DAA       _strnset
+ 0000:0DD6       _strrchr
+ 0000:0E02       _strrev
+ 0000:0E36       _strset
+ 0000:0E5A       _strlwr
+ 0000:0E7C       _strupr
+ 0000:0E9E       _strcspn
+ 0000:0EF8       _strpbrk
+ 0000:0F50       _strspn
+ 0000:0FAA       _strtok
+ 0000:1034       _strstr
+ 0000:1090       _memccpy
+ 0000:10B8       _memchr
+ 0000:10DC       _memmove
+ 0000:1124       _memicmp
+ 0000:1174       _memcmp
+ 0000:119C       _memcpy
+ 0000:11C8       _memset
+ 0000:11F6       __strerror
+ 0000:129A       _strerror
+ 012D:0042       __asizds
+ 012D:0044       __atopsp
+ 012D:0046       __aexit_rtn
+ 012D:0048       __abrktb
+ 012D:0098       __abrktbe
+ 012D:0098       __abrkp
+ 012D:009A       __acfinfo
+ 012D:00A7       __aintdiv
+ 012D:00AB       __fac
+ 012D:00B3       _errno
+ 012D:00B5       __umaskval
+ 012D:00B7       __pspadr
+ 012D:00B9       __psp
+ 012D:00BB       __dosvermajor
+ 012D:00BB       __osmajor
+ 012D:00BB       __osversion
+ 012D:00BC       __osminor
+ 012D:00BC       __dosverminor
+ 012D:00BD       __osmode
+ 012D:00BE       __doserrno
+ 012D:00BE       __oserr
+ 012D:00C0       __nfile
+ 012D:00C2       __osfile
+ 012D:00D6       ___argc
+ 012D:00D8       ___argv
+ 012D:00DA       _environ
+ 012D:00DC       __pgmptr
+ 012D:00E2       __child
+ 012D:00E4       __ovlflag
+ 012D:00E5       __intno
+ 012D:00E6       __ovlvec
+ 012D:00EA       __adbgmsg
+ 012D:00EC       STKHQQ
+ 012D:00F0       __asegds
+ 012D:00FA       __aseg1
+ 012D:00FC       __asegn
+ 012D:00FE       __asegr
+ 012D:0100       __amblksiz
+ 012D:0102       __QChdata
+ 012D:0102       __asegh
+ 012D:0244       _sys_errlist
+ 012D:0290       _sys_nerr
+ 012D:0294       __fpinit
+ 012D:037A       _edata
+ 012D:0420       _end
+ 0000:9876  Abs  __acrtmsg
+ 0000:9876  Abs  __acrtused
+
+Program entry point at 0000:03C8

@@ -1,0 +1,6 @@
+I have dissembled the DOS release of "The Scoop", a mystery adventure game published by Spinnaker Software in 1989.
+The original code was compiled using the Microsoft C compiler version 5.
+
+The function sub_3446 handles something related with strings.
+
+Use the information in the string.txt file to find which strings are used by each procedure.

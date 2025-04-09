@@ -1,0 +1,14 @@
+I have dissembled the DOS release of "The Scoop", a mystery adventure game published by Spinnaker Software in 1989.
+The original code was compiled using the Microsoft C compiler. Write a C function keeping the original name that gets compiled to this assembly code by the Microsoft C 5.0 (released in 1987)
+making sure you cover the following requirements:
+
+* Only answer with the code, and nothing else.
+* Keep the code as high-level as possible: do not use inline assembly, gotos nor dummy variables.
+* Do not use extern variables nor pragmas, these are not supported by this old compiler.
+* Import and use dos.h and other headers if needed to call a well known function. If you see an unknown function call, write a function implementation with an explicit empty body.
+* Preserve memory usage: make sure that the local variables are in the same order.
+* For segmented memory access, you can define and use `#define MK_FP(a,off) ((void FAR *) (((unsigned long)(a) << 16) | (unsigned long)(off)))`. Do NOT use _DS as it is not supported in this compiler.
+* Try to avoid using `DS` directly. If you still need to, use segread.
+* Ignore the call to `sub_AAFE` (__chkstk) since it is automatically inserted by the compiler.
+* Include a main() function that calls the function you are writing using zeros as parameters and immediately return 0. The main should not call any other functions
+* Do NOT include comments since these can break the compiler parsing

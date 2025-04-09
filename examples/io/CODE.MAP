@@ -1,0 +1,309 @@
+
+ Start  Stop   Length Name                   Class
+ 00000H 002B1H 002B2H CODE_TEXT              CODE
+ 002B2H 01594H 012E3H _TEXT                  CODE
+ 01596H 01596H 00000H C_ETEXT                ENDCODE
+ 01596H 01596H 00000H FAR_HDR                FAR_MSG
+ 01596H 01596H 00000H FAR_MSG                FAR_MSG
+ 01596H 01596H 00000H FAR_PAD                FAR_MSG
+ 01596H 01596H 00000H FAR_EPAD               FAR_MSG
+ 015A0H 01D9FH 00800H FAR_BSS                FAR_BSS
+ 01DA0H 01DE1H 00042H NULL                   BEGDATA
+ 01DE2H 01EEDH 0010CH _DATA                  DATA
+ 01EEEH 01EFBH 0000EH CDATA                  DATA
+ 01EFCH 01EFCH 00000H XIFB                   DATA
+ 01EFCH 01EFCH 00000H XIF                    DATA
+ 01EFCH 01EFCH 00000H XIFE                   DATA
+ 01EFCH 01EFCH 00000H XIB                    DATA
+ 01EFCH 01EFCH 00000H XI                     DATA
+ 01EFCH 01EFCH 00000H XIE                    DATA
+ 01EFCH 01EFCH 00000H XPB                    DATA
+ 01EFCH 01EFCH 00000H XP                     DATA
+ 01EFCH 01EFCH 00000H XPE                    DATA
+ 01EFCH 01EFCH 00000H XCB                    DATA
+ 01EFCH 01EFCH 00000H XC                     DATA
+ 01EFCH 01EFCH 00000H XCE                    DATA
+ 01EFCH 01EFCH 00000H XCFB                   DATA
+ 01EFCH 01EFCH 00000H XCF                    DATA
+ 01EFCH 01EFCH 00000H XCFE                   DATA
+ 01EFCH 01F51H 00056H CONST                  CONST
+ 01F52H 01F59H 00008H HDR                    MSG
+ 01F5AH 02048H 000EFH MSG                    MSG
+ 02049H 0205BH 00013H PAD                    MSG
+ 0205CH 0205CH 00001H EPAD                   MSG
+ 0205EH 0205EH 00000H _BSS                   BSS
+ 0205EH 0205EH 00000H XOB                    BSS
+ 0205EH 0205EH 00000H XO                     BSS
+ 0205EH 0205EH 00000H XOE                    BSS
+ 02060H 02060H 00000H c_common               BSS
+ 02060H 0285FH 00800H STACK                  STACK
+
+ Origin   Group
+ 01DA:0   DGROUP
+ 0159:0   FMGROUP
+
+  Address         Publics by Name
+
+ 01DA:00F6       STKHQQ
+ 002B:0A4E       _abort
+ 002B:11B0       _access
+ 015A:0000       _array1
+ 015A:0400       _array2
+ 002B:11D2       _chmod
+ 002B:0B46       _chsize
+ 002B:05BE       _close
+ 002B:0A94       _creat
+ 002B:0CD2       _dup
+ 002B:0D0A       _dup2
+ 01DA:02BE       _edata
+ 01DA:02C0       _end
+ 01DA:00DC       _environ
+ 002B:0AB0       _eof
+ 01DA:00B3       _errno
+ 0000:00CA       _example_abort
+ 0000:0000       _example_access
+ 0000:0018       _example_chmod
+ 0000:0030       _example_chsize
+ 0000:004A       _example_close
+ 0000:005E       _example_creat
+ 0000:0076       _example_dup
+ 0000:008A       _example_dup2
+ 0000:00A2       _example_eof
+ 0000:00B6       _example_exit
+ 0000:00D8       _example_filelength
+ 0000:00EC       _example_isatty
+ 0000:0100       _example_locking
+ 0000:011E       _example_lseek
+ 0000:0138       _example_mktemp
+ 0000:0152       _example_open
+ 0000:016A       _example_read
+ 0000:018C       _example_remove
+ 0000:01B2       _example_rename
+ 0000:01CC       _example_setmode
+ 0000:01E4       _example_sopen
+ 0000:01FE       _example_tell
+ 0000:0212       _example_umask
+ 0000:0226       _example_write
+ 002B:01A4       _exit
+ 002B:0D32       _filelength
+ 002B:11FA       _getpid
+ 002B:0EE4       _intdosx
+ 002B:0A70       _isatty
+ 002B:121C       _locking
+ 002B:05DE       _lseek
+ 0000:0248       _main
+ 002B:0F46       _memset
+ 002B:0D9A       _mktemp
+ 002B:0658       _open
+ 002B:0F9A       _raise
+ 002B:0808       _read
+ 002B:12D6       _remove
+ 002B:12C2       _rename
+ 002B:0E78       _setmode
+ 002B:1032       _signal
+ 002B:0B12       _sopen
+ 002B:0A3A       _stackavail
+ 002B:0B2E       _tell
+ 002B:119E       _umask
+ 002B:12D6       _unlink
+ 002B:08F0       _write
+ 01DA:00F2       __aaltstkovr
+ 01DA:0098       __abrkp
+ 01DA:0048       __abrktb
+ 01DA:0098       __abrktbe
+ 01DA:009A       __acfinfo
+ 0000:9876  Abs  __acrtmsg
+ 0000:9876  Abs  __acrtused
+ 01DA:00EE       __adbgmsg
+ 01DA:0046       __aexit_rtn
+ 0000:1000  Abs  __AHINCR
+ 0000:000C  Abs  __AHSHIFT
+ 01DA:00A7       __aintdiv
+ 002B:00CC       __amsg_exit
+ 01DA:0042       __asizds
+ 01DA:012A       __asizeC
+ 01DA:012B       __asizeD
+ 002B:0012       __astart
+ 01DA:0044       __atopsp
+ 01DA:0112       __cfltcvt_tab
+ 01DA:00E6       __child
+ 002B:026C       __chkstk
+ 002B:00E0       __cinit
+ 002B:00BD       __cintDIV
+ 002B:0660       __copensub
+ 01DA:012C       __csigtab0
+ 002B:0202       __ctermsub
+ 002B:07F7       __cXENIXtoDOSmode
+ 01DA:00BE       __doserrno
+ 002B:056A       __dosret0
+ 002B:057D       __dosretax
+ 002B:0572       __dosreturn
+ 01DA:00BB       __dosvermajor
+ 01DA:00BC       __dosverminor
+ 002B:01BB       __exit
+ 01DA:00AB       __fac
+ 002B:0242       __FF_MSGBANNER
+ 01DA:0110       __fmode
+ 01DA:0150       __fpinit
+ 002B:0266       __fptrap
+ 01DA:00E9       __intno
+ 01DA:0110       __iomode
+ 002B:058A       __maperror
+ 002B:0528       __myalloc
+ 01DA:00C0       __nfile
+ 002B:04D2       __NMSG_TEXT
+ 002B:04FD       __NMSG_WRITE
+ 002B:0290       __nullcheck
+ 01DA:00BE       __oserr
+ 01DA:00C2       __osfile
+ 01DA:00BB       __osmajor
+ 01DA:00BC       __osminor
+ 01DA:00BD       __osmode
+ 01DA:00BB       __osversion
+ 01DA:00E8       __ovlflag
+ 01DA:00EA       __ovlvec
+ 01DA:00E0       __pgmptr
+ 01DA:00B9       __psp
+ 01DA:00B7       __pspadr
+ 002B:02B6       __setargv
+ 002B:045E       __setenvp
+ 002B:10D5       __sigentry
+ 01DA:0128       __sigintoff
+ 01DA:0126       __sigintseg
+ 01DA:00B5       __umaskval
+ 01DA:00D6       ___argc
+ 01DA:00D8       ___argv
+
+  Address         Publics by Value
+
+ 0000:0000       _example_access
+ 0000:000C  Abs  __AHSHIFT
+ 0000:0018       _example_chmod
+ 0000:0030       _example_chsize
+ 0000:004A       _example_close
+ 0000:005E       _example_creat
+ 0000:0076       _example_dup
+ 0000:008A       _example_dup2
+ 0000:00A2       _example_eof
+ 0000:00B6       _example_exit
+ 0000:00CA       _example_abort
+ 0000:00D8       _example_filelength
+ 0000:00EC       _example_isatty
+ 0000:0100       _example_locking
+ 0000:011E       _example_lseek
+ 0000:0138       _example_mktemp
+ 0000:0152       _example_open
+ 0000:016A       _example_read
+ 0000:018C       _example_remove
+ 0000:01B2       _example_rename
+ 0000:01CC       _example_setmode
+ 0000:01E4       _example_sopen
+ 0000:01FE       _example_tell
+ 0000:0212       _example_umask
+ 0000:0226       _example_write
+ 0000:0248       _main
+ 002B:0012       __astart
+ 002B:00BD       __cintDIV
+ 002B:00CC       __amsg_exit
+ 002B:00E0       __cinit
+ 002B:01A4       _exit
+ 002B:01BB       __exit
+ 002B:0202       __ctermsub
+ 002B:0242       __FF_MSGBANNER
+ 002B:0266       __fptrap
+ 002B:026C       __chkstk
+ 002B:0290       __nullcheck
+ 002B:02B6       __setargv
+ 002B:045E       __setenvp
+ 002B:04D2       __NMSG_TEXT
+ 002B:04FD       __NMSG_WRITE
+ 002B:0528       __myalloc
+ 002B:056A       __dosret0
+ 002B:0572       __dosreturn
+ 002B:057D       __dosretax
+ 002B:058A       __maperror
+ 002B:05BE       _close
+ 002B:05DE       _lseek
+ 002B:0658       _open
+ 002B:0660       __copensub
+ 002B:07F7       __cXENIXtoDOSmode
+ 002B:0808       _read
+ 002B:08F0       _write
+ 002B:0A3A       _stackavail
+ 002B:0A4E       _abort
+ 002B:0A70       _isatty
+ 002B:0A94       _creat
+ 002B:0AB0       _eof
+ 002B:0B12       _sopen
+ 002B:0B2E       _tell
+ 002B:0B46       _chsize
+ 002B:0CD2       _dup
+ 002B:0D0A       _dup2
+ 002B:0D32       _filelength
+ 0000:1000  Abs  __AHINCR
+ 002B:0D9A       _mktemp
+ 002B:0E78       _setmode
+ 002B:0EE4       _intdosx
+ 002B:0F46       _memset
+ 002B:0F9A       _raise
+ 002B:1032       _signal
+ 002B:10D5       __sigentry
+ 002B:119E       _umask
+ 002B:11B0       _access
+ 002B:11D2       _chmod
+ 002B:11FA       _getpid
+ 002B:121C       _locking
+ 002B:12C2       _rename
+ 002B:12D6       _unlink
+ 002B:12D6       _remove
+ 015A:0000       _array1
+ 015A:0400       _array2
+ 01DA:0042       __asizds
+ 01DA:0044       __atopsp
+ 01DA:0046       __aexit_rtn
+ 01DA:0048       __abrktb
+ 01DA:0098       __abrktbe
+ 01DA:0098       __abrkp
+ 01DA:009A       __acfinfo
+ 01DA:00A7       __aintdiv
+ 01DA:00AB       __fac
+ 01DA:00B3       _errno
+ 01DA:00B5       __umaskval
+ 01DA:00B7       __pspadr
+ 01DA:00B9       __psp
+ 01DA:00BB       __osversion
+ 01DA:00BB       __osmajor
+ 01DA:00BB       __dosvermajor
+ 01DA:00BC       __osminor
+ 01DA:00BC       __dosverminor
+ 01DA:00BD       __osmode
+ 01DA:00BE       __doserrno
+ 01DA:00BE       __oserr
+ 01DA:00C0       __nfile
+ 01DA:00C2       __osfile
+ 01DA:00D6       ___argc
+ 01DA:00D8       ___argv
+ 01DA:00DC       _environ
+ 01DA:00E0       __pgmptr
+ 01DA:00E6       __child
+ 01DA:00E8       __ovlflag
+ 01DA:00E9       __intno
+ 01DA:00EA       __ovlvec
+ 01DA:00EE       __adbgmsg
+ 01DA:00F2       __aaltstkovr
+ 01DA:00F6       STKHQQ
+ 01DA:0110       __iomode
+ 01DA:0110       __fmode
+ 01DA:0112       __cfltcvt_tab
+ 01DA:0126       __sigintseg
+ 01DA:0128       __sigintoff
+ 01DA:012A       __asizeC
+ 01DA:012B       __asizeD
+ 01DA:012C       __csigtab0
+ 01DA:0150       __fpinit
+ 01DA:02BE       _edata
+ 01DA:02C0       _end
+ 0000:9876  Abs  __acrtused
+ 0000:9876  Abs  __acrtmsg
+
+Program entry point at 002B:0012

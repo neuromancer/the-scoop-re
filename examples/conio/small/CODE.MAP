@@ -1,0 +1,332 @@
+
+ Start  Stop   Length Name                   Class
+ 00000H 025ACH 025ADH _TEXT                  CODE
+ 025B0H 04A0FH 02460H EMULATOR_TEXT          CODE
+ 04A10H 04A10H 00000H C_ETEXT                ENDCODE
+ 04A10H 04B6FH 00160H EMULATOR_DATA          FAR_DATA
+ 04B70H 04BB1H 00042H NULL                   BEGDATA
+ 04BB2H 04F7EH 003CDH _DATA                  DATA
+ 04F80H 04F8DH 0000EH CDATA                  DATA
+ 04F8EH 04F8EH 00000H XIFB                   DATA
+ 04F8EH 04F8EH 00000H XIF                    DATA
+ 04F8EH 04F8EH 00000H XIFE                   DATA
+ 04F8EH 04F8EH 00000H XIB                    DATA
+ 04F8EH 04F8FH 00002H XI                     DATA
+ 04F90H 04F90H 00000H XIE                    DATA
+ 04F90H 04F90H 00000H XPB                    DATA
+ 04F90H 04F90H 00000H XP                     DATA
+ 04F90H 04F90H 00000H XPE                    DATA
+ 04F90H 04F90H 00000H XCB                    DATA
+ 04F90H 04F90H 00000H XC                     DATA
+ 04F90H 04F90H 00000H XCE                    DATA
+ 04F90H 04F90H 00000H XCFB                   DATA
+ 04F90H 04F90H 00000H XCF                    DATA
+ 04F90H 04F90H 00000H XCFE                   DATA
+ 04F90H 04FC9H 0003AH CONST                  CONST
+ 04FCAH 04FD1H 00008H HDR                    MSG
+ 04FD2H 05176H 001A5H MSG                    MSG
+ 05177H 05178H 00002H PAD                    MSG
+ 05179H 05179H 00001H EPAD                   MSG
+ 0517AH 051BFH 00046H _BSS                   BSS
+ 051C0H 051C0H 00000H XOB                    BSS
+ 051C0H 051C0H 00000H XO                     BSS
+ 051C0H 051C0H 00000H XOE                    BSS
+ 051C0H 055BFH 00400H c_common               BSS
+ 055C0H 05DBFH 00800H STACK                  STACK
+
+ Origin   Group
+ 04B7:0   DGROUP
+
+  Address         Publics by Name
+
+ 04B7:0368       $i8_implicit_exp
+ 04B7:0366       $i8_inpbas
+ 0000:18BD       $i8_input
+ 04B7:0367       $i8_input_ws
+ 0000:1CFF       $i8_output
+ 0000:1FC0       $i8_tpwr10
+ 0000:FE32  Abs  FIARQQ
+ 0000:0E32  Abs  FICRQQ
+ 0000:5C32  Abs  FIDRQQ
+ 0000:1632  Abs  FIERQQ
+ 0000:0632  Abs  FISRQQ
+ 0000:A23D  Abs  FIWRQQ
+ 0000:4000  Abs  FJARQQ
+ 0000:C000  Abs  FJCRQQ
+ 0000:8000  Abs  FJSRQQ
+ 04B7:00EC       STKHQQ
+ 0000:06CA       _atof
+ 0000:16EE       _cgets
+ 0000:07BA       _cprintf
+ 0000:0F5A       _cputs
+ 0000:0F7C       _cscanf
+ 04B7:060A       _edata
+ 04B7:0A50       _end
+ 04B7:00DA       _environ
+ 04B7:00B3       _errno
+ 0000:0010       _example_cgets
+ 0000:0028       _example_cprintf
+ 0000:0046       _example_cputs
+ 0000:005A       _example_cscanf
+ 0000:0076       _example_getch
+ 0000:0080       _example_getche
+ 0000:008A       _example_inp
+ 0000:00A4       _example_inpw
+ 0000:00BE       _example_kbhit
+ 0000:00C8       _example_outp
+ 0000:00EA       _example_outpw
+ 0000:010C       _example_putch
+ 0000:0126       _example_ungetch
+ 0000:02E8       _exit
+ 0000:07A2       _getch
+ 0000:079E       _getche
+ 0000:1714       _inp
+ 0000:1826       _inpw
+ 0000:078E       _kbhit
+ 0000:0140       _main
+ 0000:1740       _memmove
+ 0000:1788       _memset
+ 0000:1722       _outp
+ 0000:1830       _outpw
+ 0000:1730       _putch
+ 0000:067C       _strcpy
+ 0000:06AE       _strlen
+ 0000:0784       _ultoa
+ 0000:16D0       _ungetch
+ 04B7:0098       __abrkp
+ 04B7:0048       __abrktb
+ 04B7:0098       __abrktbe
+ 04B7:009A       __acfinfo
+ 0000:9876  Abs  __acrtmsg
+ 0000:9876  Abs  __acrtused
+ 04B7:00EA       __adbgmsg
+ 04B7:0046       __aexit_rtn
+ 04B7:00A7       __aintdiv
+ 0000:0214       __amsg_exit
+ 0000:1848       __aNFblshl
+ 0000:183C       __aNlshl
+ 0000:1848       __aNNalshl
+ 04B7:0042       __asizds
+ 04B7:0218       __asizeC
+ 04B7:0219       __asizeD
+ 0000:0170       __astart
+ 04B7:0044       __atopsp
+ 04B7:0850       __bufin
+ 04B7:0650       __bufout
+ 0000:2538       __cfltcvt
+ 04B7:020A       __cfltcvt_tab
+ 0000:21F4       __cftoe
+ 0000:234F       __cftof
+ 0000:2482       __cftog
+ 04B7:031C       __chbuf
+ 04B7:00E2       __child
+ 0000:03BA       __chkstk
+ 0000:0224       __cinit
+ 0000:0205       __cintDIV
+ 0000:17B6       __cltoasub
+ 0000:213F       __cropzeros
+ 0000:0344       __ctermsub
+ 04B7:021A       __ctype
+ 04B7:021A       __ctype_
+ 0000:17C2       __cxtoa
+ 04B7:00BE       __doserrno
+ 04B7:00BB       __dosvermajor
+ 04B7:00BC       __dosverminor
+ 0000:02FF       __exit
+ 04B7:00AB       __fac
+ 0000:21B1       __fassign
+ 0000:20AD       __fcmp
+ 0000:20D0       __fcompp
+ 0000:0394       __FF_MSGBANNER
+ 0000:2024       __fltin
+ 0000:1FFD       __fltinf
+ 0000:2067       __fltout
+ 0000:9876  Abs  __fltused
+ 0000:20E9       __forcdecpt
+ 025B:072E       __fpemulator
+ 025B:01B6       __FPEXCEPTION87
+ 04B7:0412       __fpinit
+ 025B:23EA       __FPINSTALL87
+ 025B:0024       __fpmath
+ 0000:1883       __fpsignal
+ 04A1:0160       __fptaskdata
+ 025B:2419       __FPTERMINATE87
+ 0000:070A       __fptostr
+ 0000:03B4       __fptrap
+ 04B7:00E5       __intno
+ 04B7:00F0       __iob
+ 04B7:0190       __iob2
+ 04B7:0208       __lastiob
+ 0000:063A       __myalloc
+ 04B7:00C0       __nfile
+ 0000:05E6       __NMSG_TEXT
+ 0000:0611       __NMSG_WRITE
+ 0000:03D0       __nullcheck
+ 04B7:00BE       __oserr
+ 04B7:00C2       __osfile
+ 04B7:00BB       __osmajor
+ 04B7:00BC       __osminor
+ 04B7:00BD       __osmode
+ 04B7:00BB       __osversion
+ 04B7:00E4       __ovlflag
+ 04B7:00E6       __ovlvec
+ 04B7:00DC       __pgmptr
+ 0000:2193       __positive
+ 04B7:00B9       __psp
+ 04B7:00B7       __pspadr
+ 0000:03F2       __setargv
+ 0000:0580       __setenvp
+ 04B7:0216       __sigintoff
+ 04B7:0214       __sigintseg
+ 04B7:00B5       __umaskval
+ 0000:1816       __wrt2err
+ 04B7:00D6       ___argc
+ 04B7:00D8       ___argv
+
+  Address         Publics by Value
+
+ 0000:0010       _example_cgets
+ 0000:0028       _example_cprintf
+ 0000:0046       _example_cputs
+ 0000:005A       _example_cscanf
+ 0000:0076       _example_getch
+ 0000:0080       _example_getche
+ 0000:008A       _example_inp
+ 0000:00A4       _example_inpw
+ 0000:00BE       _example_kbhit
+ 0000:00C8       _example_outp
+ 0000:00EA       _example_outpw
+ 0000:010C       _example_putch
+ 0000:0126       _example_ungetch
+ 0000:0140       _main
+ 0000:0170       __astart
+ 0000:0205       __cintDIV
+ 0000:0214       __amsg_exit
+ 0000:0224       __cinit
+ 0000:02E8       _exit
+ 0000:02FF       __exit
+ 0000:0344       __ctermsub
+ 0000:0394       __FF_MSGBANNER
+ 0000:03B4       __fptrap
+ 0000:03BA       __chkstk
+ 0000:03D0       __nullcheck
+ 0000:03F2       __setargv
+ 0000:0580       __setenvp
+ 0000:05E6       __NMSG_TEXT
+ 0000:0611       __NMSG_WRITE
+ 0000:0632  Abs  FISRQQ
+ 0000:063A       __myalloc
+ 0000:067C       _strcpy
+ 0000:06AE       _strlen
+ 0000:06CA       _atof
+ 0000:070A       __fptostr
+ 0000:0784       _ultoa
+ 0000:078E       _kbhit
+ 0000:079E       _getche
+ 0000:07A2       _getch
+ 0000:07BA       _cprintf
+ 0000:0E32  Abs  FICRQQ
+ 0000:0F5A       _cputs
+ 0000:0F7C       _cscanf
+ 0000:1632  Abs  FIERQQ
+ 0000:16D0       _ungetch
+ 0000:16EE       _cgets
+ 0000:1714       _inp
+ 0000:1722       _outp
+ 0000:1730       _putch
+ 0000:1740       _memmove
+ 0000:1788       _memset
+ 0000:17B6       __cltoasub
+ 0000:17C2       __cxtoa
+ 0000:1816       __wrt2err
+ 0000:1826       _inpw
+ 0000:1830       _outpw
+ 0000:183C       __aNlshl
+ 0000:1848       __aNNalshl
+ 0000:1848       __aNFblshl
+ 0000:1883       __fpsignal
+ 0000:18BD       $i8_input
+ 0000:1CFF       $i8_output
+ 0000:1FC0       $i8_tpwr10
+ 0000:1FFD       __fltinf
+ 0000:2024       __fltin
+ 0000:2067       __fltout
+ 0000:20AD       __fcmp
+ 0000:20D0       __fcompp
+ 0000:20E9       __forcdecpt
+ 0000:213F       __cropzeros
+ 0000:2193       __positive
+ 0000:21B1       __fassign
+ 0000:21F4       __cftoe
+ 0000:234F       __cftof
+ 0000:2482       __cftog
+ 0000:2538       __cfltcvt
+ 025B:0024       __fpmath
+ 025B:01B6       __FPEXCEPTION87
+ 025B:072E       __fpemulator
+ 0000:4000  Abs  FJARQQ
+ 025B:23EA       __FPINSTALL87
+ 025B:2419       __FPTERMINATE87
+ 04A1:0160       __fptaskdata
+ 04B7:0042       __asizds
+ 04B7:0044       __atopsp
+ 04B7:0046       __aexit_rtn
+ 04B7:0048       __abrktb
+ 04B7:0098       __abrkp
+ 04B7:0098       __abrktbe
+ 04B7:009A       __acfinfo
+ 04B7:00A7       __aintdiv
+ 04B7:00AB       __fac
+ 04B7:00B3       _errno
+ 04B7:00B5       __umaskval
+ 04B7:00B7       __pspadr
+ 04B7:00B9       __psp
+ 04B7:00BB       __osmajor
+ 04B7:00BB       __dosvermajor
+ 04B7:00BB       __osversion
+ 04B7:00BC       __osminor
+ 04B7:00BC       __dosverminor
+ 04B7:00BD       __osmode
+ 04B7:00BE       __oserr
+ 04B7:00BE       __doserrno
+ 04B7:00C0       __nfile
+ 04B7:00C2       __osfile
+ 04B7:00D6       ___argc
+ 04B7:00D8       ___argv
+ 04B7:00DA       _environ
+ 04B7:00DC       __pgmptr
+ 04B7:00E2       __child
+ 04B7:00E4       __ovlflag
+ 04B7:00E5       __intno
+ 04B7:00E6       __ovlvec
+ 04B7:00EA       __adbgmsg
+ 04B7:00EC       STKHQQ
+ 04B7:00F0       __iob
+ 04B7:0190       __iob2
+ 04B7:0208       __lastiob
+ 04B7:020A       __cfltcvt_tab
+ 04B7:0214       __sigintseg
+ 04B7:0216       __sigintoff
+ 04B7:0218       __asizeC
+ 04B7:0219       __asizeD
+ 04B7:021A       __ctype_
+ 04B7:021A       __ctype
+ 04B7:031C       __chbuf
+ 04B7:0366       $i8_inpbas
+ 04B7:0367       $i8_input_ws
+ 04B7:0368       $i8_implicit_exp
+ 04B7:0412       __fpinit
+ 04B7:060A       _edata
+ 04B7:0650       __bufout
+ 04B7:0850       __bufin
+ 04B7:0A50       _end
+ 0000:5C32  Abs  FIDRQQ
+ 0000:8000  Abs  FJSRQQ
+ 0000:9876  Abs  __acrtmsg
+ 0000:9876  Abs  __fltused
+ 0000:9876  Abs  __acrtused
+ 0000:A23D  Abs  FIWRQQ
+ 0000:C000  Abs  FJCRQQ
+ 0000:FE32  Abs  FIARQQ
+
+Program entry point at 0000:0170
